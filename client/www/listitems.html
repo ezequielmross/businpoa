@@ -1,0 +1,17 @@
+	<div id="list" >
+		<div class="topcoat-list" >
+			<div class="list-title">
+				<input type="search" value="" placeholder="Filter" class="topcoat-search-input" ng-model="query">
+			</div>
+			<ul class="topcoat-list__container">
+				<li class="topcoat-list__item" bindonce="item" ng-repeat="item in items | filter:query | limitTo:10">
+
+					<div tap="goTo('map/'+item.id)" ng-swipe-right="item.bool=true" ng-swipe-left="item.bool=false" ng-class="{swipe:item.bool}">
+						<span bo-text="item.codigo"></span><br>
+						<span bo-text="item.nome"></span>
+					</div>
+
+				</li>
+			</ul>
+		</div>
+	</div>
