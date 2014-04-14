@@ -1,6 +1,6 @@
 /*global angular, console, google, document*/
 
-angular.module('poabus').controller("MapController", ["$scope", "servicepoabus", "$routeParams", function ($scope, servicepoabus, $routeParams) {
+angular.module('poabus').controller("MapController", ["$scope", "servicebusinpoa", "$routeParams", function ($scope, servicebusinpoa, $routeParams) {
     'use strict';
     
     
@@ -20,7 +20,7 @@ angular.module('poabus').controller("MapController", ["$scope", "servicepoabus",
     
     initialize();
     //populando mapa
-    servicepoabus.itinerario($routeParams.term).then(
+    servicebusinpoa.itinerario($routeParams.term).then(
         function (stuff) {
             var i,
                 rota;

@@ -8,6 +8,6 @@ angular.module('poabus').config(['$routeProvider', function ($routeProvider) {
 	$routeProvider.when('/bus', { templateUrl: 'listitems.html', controller: "BusController"});
 	$routeProvider.when('/lotacao', { templateUrl: 'listitems.html', controller: "LotacaoController"});
 	$routeProvider.when('/itinerario/:term', { templateUrl: 'itinerario.html', controller: "ItinerarioController"});
-	$routeProvider.when('/map/:term', { templateUrl: 'mapa.html', controller: "MapController"});
+	$routeProvider.when('/map/:term', { templateUrl: 'map.html', controller: "MapController"});
     $routeProvider.otherwise({ redirectTo: '/home' });
 }]);

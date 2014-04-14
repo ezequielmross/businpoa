@@ -8,7 +8,7 @@ angular.module('poabus').config(['$routeProvider', function ($routeProvider) {
 	$routeProvider.when('/bus', { templateUrl: 'listitems.html', controller: "BusController"});
 	$routeProvider.when('/lotacao', { templateUrl: 'listitems.html', controller: "LotacaoController"});
 	$routeProvider.when('/itinerario/:term', { templateUrl: 'itinerario.html', controller: "ItinerarioController"});
-	$routeProvider.when('/map/:term', { templateUrl: 'mapa.html', controller: "MapController"});
+	$routeProvider.when('/map/:term', { templateUrl: 'map.html', controller: "MapController"});
     $routeProvider.otherwise({ redirectTo: '/home' });
 }]);
 
@@ -116,7 +116,7 @@ angular.module('poabus').controller("LotacaoController", ["$scope", "servicebusi
 }]);
 /*global angular, console, google, document*/
 
-angular.module('poabus').controller("MapController", ["$scope", "servicepoabus", "$routeParams", function ($scope, servicepoabus, $routeParams) {
+angular.module('poabus').controller("MapController", ["$scope", "servicebusinpoa", "$routeParams", function ($scope, servicebusinpoa, $routeParams) {
     'use strict';
     
     
@@ -136,7 +136,7 @@ angular.module('poabus').controller("MapController", ["$scope", "servicepoabus",
     
     initialize();
     //populando mapa
-    servicepoabus.itinerario($routeParams.term).then(
+    servicebusinpoa.itinerario($routeParams.term).then(
         function (stuff) {
             var i,
                 rota;
