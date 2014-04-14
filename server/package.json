@@ -1,0 +1,19 @@
+{
+  "name": "businpoa",
+  "version": "0.1.0",
+  "description": "A NodeJS server sample accessing government API to access information about public transport.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/vinnylinck/businpoa/"
+  },
+  "author": "Vinicius Linck <vinnylinck@gmail.com>",
+  "license": "GPL",
+  "dependencies": {
+    "express": "~3.4.8",
+    "request": "~2.33.0"
+  }
+}
