@@ -140,13 +140,11 @@ angular.module('poabus').controller("MapController", ["$scope", "servicebusinpoa
         function (stuff) {
             var i,
                 rota;
-            
-            for (i = 0; i < stuff.length; i += 1) {
-                if (stuff[i].lat != null) {
-                    cordinates.push(new google.maps.LatLng(stuff[i].lat, stuff[i].lng));
+            angular.forEach(stuff, function (item) {
+                if(item.lat != null){
+                    cordinates.push(new google.maps.LatLng(item.lat, item.lng));
                 }
-                
-            }
+            });
             
             rota = new google.maps.Polyline({
                 path: cordinates,
