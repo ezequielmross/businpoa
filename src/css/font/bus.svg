@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="bus" horiz-adv-x="1000" >
+<font-face font-family="bus" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="bus" unicode="&#xe800;" d="m150 775l0-50-100 0c-25 0-50-25-50-50l0-650 50 0 0-100 100 0 0 100 350 0 0-100 100 0 0 100 50 0 0 650c0 25-25 50-50 50l-100 0 0 50z m-50-150l450 0 0-250-450 0 0 100z m50-400c28 0 50-22 50-50 0-28-22-50-50-50-28 0-50 22-50 50 0 28 22 50 50 50z m350 0c28 0 50-22 50-50 0-28-22-50-50-50-28 0-50 22-50 50 0 28 22 50 50 50z" horiz-adv-x="650" />
+<glyph glyph-name="embassy" unicode="&#xe801;" d="m50 825c-28 0-50-22-50-50l0-850c0-25 25-50 50-50 25 0 50 25 50 50l0 513c17 7 34 12 50 12 100 0 248-125 350-125 44 0 106 17 150 50l0 350c-50-37-100-75-150-75-100 0-250 125-350 125-17 0-33-3-50-6l0 6c0 28-22 50-50 50z" horiz-adv-x="650" />
+<glyph glyph-name="left-open" unicode="&#xe802;" d="m0 353l391 391q18 18 43 18 24 0 43-18 18-18 18-44t-18-43l-304-304 304-305q18-17 18-43t-18-43q-18-18-43-18t-43 18z" horiz-adv-x="495.1" />
+</font>
+</defs>
+</svg>

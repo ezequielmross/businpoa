@@ -1,0 +1,14 @@
+{
+  "name": "icons",
+  "_cacheHeaders": {
+    "ETag": "\"f7582871e12fe26e6aac8982d1f5e250\"",
+    "Content-Length": "36770",
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "_release": "e-tag:f7582871e",
+  "main": "index",
+  "_source": "https://github.com/topcoat/icons",
+  "_target": "*",
+  "_originalSource": "https://github.com/topcoat/icons",
+  "_direct": true
+}
