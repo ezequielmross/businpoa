@@ -100,6 +100,7 @@ angular.module('poabus').controller("BusController", ["$scope", "servicebusinpoa
 
 angular.module('poabus').controller("LotacaoController", ["$scope", "servicebusinpoa", function ($scope, servicebusinpoa) {
     'use strict';
+    $scope.name = "";
     $scope.name = "Lotação";
     servicebusinpoa.listlotacao().then(
         function (stuff) {
