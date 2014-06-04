@@ -18,7 +18,8 @@ angular.module('poabus').service('servicebusinpoa', ["$http", "$q", function ($h
 				).error(
 					
 					function (error) {
-						alert("error:" + error);
+						console.log("error:" + error);
+						console.log("****************************************error**********************************************");
 						p.reject();
 					}
 					

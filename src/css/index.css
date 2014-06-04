@@ -36,48 +36,55 @@
 
 /****************** HOME *********************/
 .container{
-    padding-top:20px;
-    overflow:auto;
-    width:280px;
+    overflow:none;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20%;
 }
 
 .menu{
     height: 25px;
     position: relative;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .menu-top-one{
+    float:left;
+    width:80%;
     background:url(img/bus.png) no-repeat #0091E6 center;
-    background-size:35% 35%;
-    -webkit-background-size: 35% 35%;
-    -o-background-size: 35% 35%;
-    -khtml-background-size: 35% 35%;
-    -moz-background-size:35% 35%;
+    background-size:20% 50%;
+    -webkit-background-size: 20% 50%;
+    -o-background-size: 20% 50%;
+    -khtml-background-size: 20% 50%;
+    -moz-background-size:20% 50%%;
 }
 .menu-top-two{
+    float:left;
+    width:80%;
     background:url(img/bus-stop.png) no-repeat #0091E6 center;
-    background-size:30% 50%;
-    -webkit-background-size: 30% 50%;
-    -o-background-size: 30% 50%;
-    -khtml-background-size: 30% 50%;
-    -moz-background-size:30% 50%;
+    background-size:20% 80%;
+    -webkit-background-size: 20% 80%;
+    -o-background-size: 20% 80%;
+    -khtml-background-size: 20% 80%;
+    -moz-background-size:20% 80%;
 }
-
 .menu-button{
-    background-color:#F6F6F6;	
+    width:20%;
+    background-color:#F6F6F6;
+    float:right;
 }
 
 .block{
-    margin:2px;
-    width:120px;
+    margin-top:2px;
+    width:100%;
+    display:table;
 }
 .block1 {
-    float: left;
+    float: none;
 }
 .block2 {
-    float: right;
+    float: none;
 }
 
 
@@ -90,52 +97,70 @@
     .container {
         max-width: 660px;
         margin:0 auto;
+        margin-top:15%;
+        padding-top:20px;
     }
-.block{
-    width: 45%;
-}
-.menu{
-    height:10%;
-    position: relative;
-    padding: 50px;
-}
-.block1 .menu h2{
-    font-size:20pt;
-}
-.block2 .menu h2{
-    font-size:20pt;
-}
-.container{
-    width:100%;
-}
+    .block{
+        width: 45%;
+        display:block;
+    }
+    .menu{
+        height:10%;
+        position: relative;
+        padding: 50px;
+    }
+    .menu h2{
+        font-size:20pt;
+    }
+    .block1 {
+        float: left;
+    }
+    .block2 {
+        float: right;
+    }
+    .menu-top-one{
+        float:none;
+        width:auto;
+    }
+    .menu-top-two{
+        float:none;
+        width:auto;
+    }
+    .menu-button{
+        width:auto;
+        float:none;
+    }
 }
 @media all and (min-width: 500px) {
     .container {
         max-width: 660px;
         margin:0 auto;
     }
-.block{
-    width: 45%;
-}
-.menu{
-    height:20%;
-    position: relative;
-    padding: 50px;
-}
-.block1 .menu h2{
-    font-size:20pt;
-}
-.block2 .menu h2{
-    font-size:20pt;
-}
-.container{
-    width:100%;
-}
+    .block{
+        width: 45%;
+    }
+    .menu{
+        height:20%;
+        position: relative;
+        padding: 50px;
+    }
+    .menu h2{
+        font-size:20pt;
+    }
+    .block2 .menu h2{
+        font-size:20pt;
+    }
+    .block1 {
+        float: left;
+    }
+    .block2 {
+        float: right;
+    }
 }
 
 /****************** APP *********************/
 body{
-    background-color:#babbc0;
+    background-color:#58595A;
     font-size:100%;	 
 }
 .imagem{
@@ -151,9 +176,6 @@ body{
 .topcoat-search-input{
     margin:10px;
 }
-#list{
-    margin-top:-20px;
-}
 .list-title{	
     background-color:#0091E6;
 }
@@ -163,10 +185,8 @@ body{
 .swipe{
     background-color:#0091E6;
 }
-.topcoat-navigation-bar__title {
-    float: left;
-    text-align: center;
-    margin-top: 8%;
+.topcoat-navigation-bar__item {
+    text-align:center;
 }
 .topcoat-button--large--quiet {
     float:left;

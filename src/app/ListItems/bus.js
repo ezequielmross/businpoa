@@ -2,7 +2,7 @@
 
 angular.module('poabus').controller("BusController", ["$scope", "servicebusinpoa", "$location", "$filter", function ($scope, servicebusinpoa, $location, $filter) {
     'use strict';
-    
+    $scope.name = "Bus";
     $scope.$watch("items", function (newvalue, oldvalue) {
         var filtro = $filter('filter')($scope.items, 'true');
         

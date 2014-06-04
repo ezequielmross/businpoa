@@ -7,6 +7,6 @@
     <author email="ezequielmross@gmail.com">
         Ezequiel Mross Ferreira
     </author>
-    <content src="start.html" />
+    <content src="index.html" />
     <access origin="*" />
 </widget>

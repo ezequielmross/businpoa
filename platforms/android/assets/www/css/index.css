@@ -1,177 +1,238 @@
-@import url(http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope);
-@import url(http://fonts.googleapis.com/css?family=Offside);
+/****************** FONT ICONS *********************/
+@font-face {
+    font-family: 'bus';
+    src: url('font/bus.eot?51769264');
+    src: url('font/bus.eot?51769264#iefix') format('embedded-opentype'),
+    url('font/bus.woff?51769264') format('woff'),
+    url('font/bus.ttf?51769264') format('truetype'),
+    url('font/bus.svg?51769264#bus') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-body{
-	background-color:#babbc0;
-	font-size:100%;	 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "bus";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    
+    display: inline-block;
+    text-decoration: inherit;
+    
+    text-align: center;
+    /* opacity: .8; */
+    
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    
+    color:white;
+    
 }
+
+.icon-bus:before { content: '\e800'; font-size:50pt;} /* '' */
+.icon-embassy:before { content: '\e801'; font-size:50pt;} /* '' */
+.icon-left-open:before { content: '\e802'; color:black;} /* '' */
+
+/****************** HOME *********************/
 .container{
-	padding-top:20px;
-	overflow:auto;
-	width:280px;
-	margin-left: auto;
-	margin-right: auto;
+    overflow:none;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
 }
-.block{
-	margin:2px;
-	width:120px;
-}
+
 .menu{
-	height: 25px;
-	position: relative;
-	padding: 50px;
+    height: 25px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .menu-top-one{
-	background:url(img/bus.png) no-repeat #0091E6 center;
-	background-size:35% 35%;
-	-webkit-background-size: 35% 35%;
-	-o-background-size: 35% 35%;
-	-khtml-background-size: 35% 35%;
-	-moz-background-size:35% 35%;
+    float:left;
+    width:80%;
+    background:url(img/bus.png) no-repeat #0091E6 center;
+    background-size:20% 50%;
+    -webkit-background-size: 20% 50%;
+    -o-background-size: 20% 50%;
+    -khtml-background-size: 20% 50%;
+    -moz-background-size:20% 50%%;
 }
 .menu-top-two{
-	background:url(img/bus-stop.png) no-repeat #0091E6 center;
-	background-size:30% 50%;
-	-webkit-background-size: 30% 50%;
-	-o-background-size: 30% 50%;
-	-khtml-background-size: 30% 50%;
-	-moz-background-size:30% 50%;
+    float:left;
+    width:80%;
+    background:url(img/bus-stop.png) no-repeat #0091E6 center;
+    background-size:20% 80%;
+    -webkit-background-size: 20% 80%;
+    -o-background-size: 20% 80%;
+    -khtml-background-size: 20% 80%;
+    -moz-background-size:20% 80%;
 }
 .menu-button{
-	background-color:#F6F6F6;	
-}
-.block1 {
-	float: left;
-}
-.block2 {
-	float: right;
-}
-.menu h2{
-	font-family: 'Offside', cursive;
-	text-align:center;
-}
-.block1 .menu h2{
-	color:#0E0F1B;
-	font-size:10pt;
-}
-.block2 .menu h2{
-	color:#0E0F1B;
-	font-size:10pt;
+    width:20%;
+    background-color:#F6F6F6;
+    float:right;
 }
 
+.block{
+    margin-top:2px;
+    width:100%;
+    display:table;
+}
+.block1 {
+    float: none;
+}
+.block2 {
+    float: none;
+}
+
+
+.menu h2{
+    text-align:center;
+    color:#0E0F1B;
+    font-size:10pt;
+}
 @media all and (min-width: 400px) {
-	.container {
-		max-width: 660px;
-		margin:0 auto;
-	}
-	.block{
-		width: 45%;
-	}
-	.menu{
-		height:10%;
-		position: relative;
-		padding: 50px;
-	}
-	.block1 .menu h2{
-		font-size:20pt;
-	}
-	.block2 .menu h2{
-		font-size:20pt;
-	}
-	.container{
-		width:100%;
-	}
+    .container {
+        max-width: 660px;
+        margin:0 auto;
+        margin-top:15%;
+        padding-top:20px;
+    }
+    .block{
+        width: 45%;
+        display:block;
+    }
+    .menu{
+        height:10%;
+        position: relative;
+        padding: 50px;
+    }
+    .menu h2{
+        font-size:20pt;
+    }
+    .block1 {
+        float: left;
+    }
+    .block2 {
+        float: right;
+    }
+    .menu-top-one{
+        float:none;
+        width:auto;
+    }
+    .menu-top-two{
+        float:none;
+        width:auto;
+    }
+    .menu-button{
+        width:auto;
+        float:none;
+    }
 }
 @media all and (min-width: 500px) {
-	.container {
-		max-width: 660px;
-		margin:0 auto;
-	}
-	.block{
-		width: 45%;
-	}
-	.menu{
-		height:20%;
-		position: relative;
-		padding: 50px;
-	}
-	.block1 .menu h2{
-		font-size:20pt;
-	}
-	.block2 .menu h2{
-		font-size:20pt;
-	}
-	.container{
-		width:100%;
-	}
+    .container {
+        max-width: 660px;
+        margin:0 auto;
+    }
+    .block{
+        width: 45%;
+    }
+    .menu{
+        height:20%;
+        position: relative;
+        padding: 50px;
+    }
+    .menu h2{
+        font-size:20pt;
+    }
+    .block2 .menu h2{
+        font-size:20pt;
+    }
+    .block1 {
+        float: left;
+    }
+    .block2 {
+        float: right;
+    }
+}
+
+/****************** APP *********************/
+body{
+    background-color:#58595A;
+    font-size:100%;	 
 }
 .imagem{
-	margin:0 auto;
-	height:43%;	
+    margin:0 auto;
+    height:43%;	
 }
 #title{
-	font-size:5em;
-	font-family: 'Annie Use Your Telescope', cursive;
-	background-color:#FFFFFF;
+    font-size:40pt;
+    font-family: 'Annie Use Your Telescope', cursive;
+    background-color:#FFFFFF;
 }
 
 .topcoat-search-input{
-	margin:10px;
-}
-#list{
-	margin-top:-20px;
+    margin:10px;
 }
 .list-title{	
-	background-color:#0091E6;
+    background-color:#0091E6;
 }
 #imagem-maps{
-	width:5%;
+    width:5%;
 }
 .swipe{
-	background-color:#0091E6;
+    background-color:#0091E6;
 }
-/* Animações ng-Animate*/
+.topcoat-navigation-bar__item {
+    text-align:center;
+}
+.topcoat-button--large--quiet {
+    float:left;
+}
+/****************** ANIMATION *********************/
 .view-animate-container {
-	position:relative;
-	height:80%;
+    position:relative;
+    height:80%;
 }
 .slide-left.ng-enter, .slide-left.ng-leave,
 .slide-right.ng-enter, .slide-right.ng-leave{
-	-webkit-transition:all 0.5s ease;
-	-moz-transition:all 0.5s ease;
-	-o-transition:all 0.5s ease;
-	transition:all 0.5s ease;
-	display:block;
-	width:100%;
-
-	position:absolute;
-	top:0;
-	right:0;
-	bottom:0;
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+    display:block;
+    width:100%;
+    
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
 }
 
 .slide-left.ng-enter {
-	-webkit-transform: translate3d(100%, 0, 0);
-	translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    translate3d(100%, 0, 0);
 }
 .slide-left.ng-enter.ng-enter-active {
-	-webkit-transform: translate3d(0, 0, 0);
-	translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    translate3d(0, 0, 0);
 }
 .slide-left.ng-leave.ng-leave-active {
-	-webkit-transform: translate3d(-100%, 0, 0);
-	translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    translate3d(-100%, 0, 0);
 }
 
 .slide-right.ng-enter {
-	-webkit-transform: translate3d(-100%, 0, 0);
-	translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    translate3d(-100%, 0, 0);
 }
 .slide-right.ng-enter.ng-enter-active {
-	-webkit-transform: translate3d(0, 0, 0);
-	translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    translate3d(0, 0, 0);
 }
 .slide-right.ng-leave.ng-leave-active {
-	-webkit-transform: translate3d(100%, 0, 0);
-	translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    translate3d(100%, 0, 0);
 }

@@ -78,7 +78,7 @@ angular.module('poabus').controller("ItinerarioController", ["$scope", "serviceb
 
 angular.module('poabus').controller("BusController", ["$scope", "servicebusinpoa", "$location", "$filter", function ($scope, servicebusinpoa, $location, $filter) {
     'use strict';
-    
+    $scope.name = "Bus";
     $scope.$watch("items", function (newvalue, oldvalue) {
         var filtro = $filter('filter')($scope.items, 'true');
         
@@ -100,7 +100,7 @@ angular.module('poabus').controller("BusController", ["$scope", "servicebusinpoa
 
 angular.module('poabus').controller("LotacaoController", ["$scope", "servicebusinpoa", function ($scope, servicebusinpoa) {
     'use strict';
-    
+    $scope.name = "Lotação";
     servicebusinpoa.listlotacao().then(
         function (stuff) {
             $scope.items = stuff;
@@ -200,7 +200,8 @@ angular.module('poabus').service('servicebusinpoa', ["$http", "$q", function ($h
 				).error(
 					
 					function (error) {
-						alert("error:" + error);
+						console.log("error:" + error);
+						console.log("****************************************error**********************************************");
 						p.reject();
 					}
 					

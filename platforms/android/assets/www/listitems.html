@@ -1,4 +1,15 @@
-	<div id="list" >
+<!-- HEADER -->
+<div  class="topcoat-navigation-bar">
+    <a tap="back()" class="topcoat-button--large--quiet">
+        <span class="icon-left-open"></span>
+    </a>
+    <div class="topcoat-navigation-bar__item" style="width:50%;">
+        <h1 class="topcoat-navigation-bar__title">{{name}}</h1>
+    </div>
+    <span class="topcoat-notification" ng-show="name == 'Bus'">{{count}}</span>
+</div>
+<!-- LIST -->
+<div id="list" >
 		<div class="topcoat-list" >
 			<div class="list-title">
 				<input type="search" value="" placeholder="Filter" class="topcoat-search-input" ng-model="query">
